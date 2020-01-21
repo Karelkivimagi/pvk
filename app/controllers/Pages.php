@@ -1,7 +1,18 @@
 <?php
 
 
-class Pages
+class Pages extends Controller
 {
-public
+
+    /**
+     * Pages constructor.
+     */
+    public function __construct()
+    {
+    }
+
+    public function index(){
+        $data = array('title' => 'Pages');
+        $this->view('pages/index', $data);
+    }
 }
